@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 const SaveUser = ({handleSubmit}) => {
      const [firstName, setfirstName] = useState("");
+    //  const [first, setfirst] = useState(second)
       const [lastName, setlastName] = useState("");
       const [email, setemail] = useState("");
       const [password, setpassword] = useState("");
