@@ -19,6 +19,9 @@ const Home = () => {
       <button onClick={() => dispatch(addToCart(cartItem))}>
         add item to cart
       </button>
+
+
+      <Link to={'/login'}>login</Link>
     </>
   );
 };
