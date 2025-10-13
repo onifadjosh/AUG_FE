@@ -73,9 +73,10 @@ import Profile from "./pages/Profile";
 import Layout from "./pages/Layout";
 import MakeRequest from "./pages/MakeRequest";
 import Formm from "./pages/Formm";
-import Signup from "./pages/SIgnup";
+
 import Login from "./pages/Login";
 import AuthGuard from "./Auth/AuthGuard";
+import Signnup from "./pages/Signnup";
 
 const App = () => {
   const isAuthenticated = localStorage.getItem("token");
@@ -87,7 +88,7 @@ const App = () => {
 
         {/* dynamic routing */}
         <Route path="/home" element={<Home />} />
-        <Route path="/signUp" element={<Signup />} />
+        <Route path="/signUp" element={<Signnup />} />
         <Route path="/login" element={<Login />} />
         <Route element={<AuthGuard isAuthenticated={isAuthenticated}/>}>
           <Route path="/user/:username" element={<Profile />} />
