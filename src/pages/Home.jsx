@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/appslice";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const count = useSelector((state) => state.count);
